@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // Bind window scroll event
     $(window).scroll(function (event) {
-        if($(document).width()>480){
+        if($(document).width()>767){
             var scroll = $(window).scrollTop();
             if(scroll>260)
             {
@@ -54,23 +54,27 @@ $(document).ready(function () {
     });
 
     //Mobile
-    /*$("#menubar").click(function(){
-        $("#menu").slideToggle();
-        if($("#menu").is(":hidden")){
-            $("#menubar").css({
-                "transform":"rotate(0deg)"
-            });
-        }else{
-            $("#menubar").css({
-                "transform":"rotate(180deg)"
-            });
-        }
-    });*/
+    $("#menubar").click(function(){
+        $("#menu").slideToggle(200,function(){
+            if($("#menu").is(":hidden")){
+                $("#menubar").css({
+                    "transform":"rotate(0deg)"
+                });
+            }else{
+                $("#menubar").css({
+                    "transform":"rotate(180deg)"
+                });
+            }
+        });
+        
+    });
     selectMenu("The Club");
     $(".menu-item").click(function(){
-        
         var body = $("html, body");
-        body.stop().animate({scrollTop:261}, 500, 'swing');
+        if($(document).width()>767)
+            body.stop().animate({scrollTop:261}, 500, 'swing');
+        else
+            $("#menubar").trigger('click');
 
         $(".menu-item").removeClass("menu-state-active");
         $(this).addClass("menu-state-active");

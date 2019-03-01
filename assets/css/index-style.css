@@ -5,13 +5,16 @@ body{
     background-position:center;
     background-position-y: 1px;
     margin: 0px;
+    overflow-x: hidden;
 }
 #main-page{
     background: #f9f9f9;
     min-height: 120vh;
     margin-top:210px;
+    z-index: 0;
 }
 #nav-bar{
+    z-index: 9999;
     width: 100%;
     background: #fff;
     border: 1px solid #ddd;
@@ -59,16 +62,21 @@ body{
     display: none;
     text-align: center;
     font-size: 17pt;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
 }
 #menubar:hover{
     color: #77b300;
     cursor: pointer;
 }
 
-@media only screen and (max-device-width : 480px) {
+
+#content{
+    padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
     body{
-        background-size: 200px;
+        background-size: 220px;
     }
     
     #main-page{
@@ -82,7 +90,7 @@ body{
     #menu ul{
         list-style-type:none;
         padding: 0px;
-        font-size: 11pt;
+        font-size: 15pt;
         font-weight: bold;
     }
     #menu ul li{

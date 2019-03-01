@@ -41,7 +41,8 @@
                 <img src="assets/images/loader.gif" width="100px" alt="Loading">
             </center>      
         </div>
-        <div id="content">
+        <div class="row">
+        <div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
         What is Lorem Ipsum?
 
@@ -259,6 +260,7 @@ interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
 are also reproduced in their exact original form, accompanied by English versions from 
 the 1914 translation by H. Rackham.
 
+        </div>
         </div>
     </div>
 </body>
