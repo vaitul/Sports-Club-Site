@@ -1,0 +1,98 @@
+
+body{
+    background-image: url('../images/logo.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y: 1px;
+    margin: 0px;
+}
+#main-page{
+    background: #f9f9f9;
+    min-height: 120vh;
+    margin-top:210px;
+}
+#nav-bar{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    padding: 0px 10px 5px 10px;
+    min-height:85px;
+}
+#sec-logo{
+    margin-top: 6px;
+    display: none;
+    float: left;
+}
+#head-text{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #394d00;
+}
+#nav-bar img{
+    width: 140px;
+}
+#menu{
+    margin-top:20px;
+    line-height: 55px;
+}
+#menu ul{
+    list-style-type:none;
+    padding: 0px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+#menu ul li{
+    display: inline-block;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+#menu ul li:hover{
+    color: #77b300;
+}
+.menu-state-active{
+    color: #77b300;
+    border-bottom: 3px solid #77b300;
+}
+#menubar{
+    display: none;
+    text-align: center;
+    font-size: 17pt;
+    transition: 0.2s linear;
+}
+#menubar:hover{
+    color: #77b300;
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width : 480px) {
+    body{
+        background-size: 200px;
+    }
+    
+    #main-page{
+        margin-top:130px;
+    }
+    #menu{
+        display: none;
+        margin-top:20px;
+        line-height: normal;
+    }
+    #menu ul{
+        list-style-type:none;
+        padding: 0px;
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    #menu ul li{
+        width: -moz-fit-content;
+        padding: 10px;
+        display: inherit;
+        cursor: pointer;
+        transition: 0.1s linear;
+    }
+    #menubar{
+        display: block;
+    }
+}
