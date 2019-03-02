@@ -1,0 +1,53 @@
+/*********************** THE CLUB PAGE ***************************/
+blockquote{
+  border-width: 3px;
+  border-color: #ccc;
+}
+
+.img-wrap{
+  float: left;
+  margin-right: 10px;
+  border-radius: 0px;
+}
+.thumbnail{
+  box-shadow: 1px 1px 3px #ddd;
+}
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+     margin:-.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+    width:100%;
+}
+
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+}
+
+
+@media only screen and (max-width: 767px){
+  .img-wrap{
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

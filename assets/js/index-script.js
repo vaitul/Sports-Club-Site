@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(window).scroll(function (event) {
         if($(document).width()>767){
             var scroll = $(window).scrollTop();
-            if(scroll>260)
+            if(scroll>242)
             {
                 $("#nav-bar").css({
                     "position":"fixed",
@@ -17,15 +17,16 @@ $(document).ready(function () {
                 });
                 $("#sec-logo").show(0,function(){
                     $("#menu").css({
-                        "paddingRight":"140px",
+                        "paddingRight":"120px",
                     });
                 });
                 
                 $("#head-text").hide();
                 $("#content").css("paddingTop","160px");
                 $("#loader").css("paddingTop","160px");
+                $(".row-flex").fadeIn(3000);
             }
-            if(scroll<260)
+            if(scroll<242)
             {
                 $("#nav-bar").css({
                     "position":"static"
@@ -87,7 +88,7 @@ function selectMenu(name)
 {
     var request=""
     if(name=="The Club") request="theClub";
-    if(name=="Events-News") request="eventsNews";
+    if(name=="Events") request="eventsNews";
     if(name=="Media Gallery") request="mediaGallery";
     if(name=="Facilities") request="facilities";
     if(name=="Contact Us") request="contactUs";

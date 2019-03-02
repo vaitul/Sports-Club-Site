@@ -20,11 +20,12 @@ body{
     border: 1px solid #ddd;
     border-top: 0px;
     padding: 0px 10px 5px 10px;
-    min-height:85px;
+    min-height:80px;
 }
 #sec-logo{
     margin-top: 6px;
     display: none;
+    width: 120px !important;
     float: left;
 }
 #head-text{
@@ -32,12 +33,9 @@ body{
     text-align: center;
     color: #394d00;
 }
-#nav-bar img{
-    width: 140px;
-}
 #menu{
     margin-top:20px;
-    line-height: 55px;
+    line-height: 40px;
 }
 #menu ul{
     list-style-type:none;
