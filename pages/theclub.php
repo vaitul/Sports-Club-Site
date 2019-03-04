@@ -33,7 +33,7 @@
     <br>
 
     <div class="row row-flex row-flex-wrap">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <div class="thumbnail">
                 <img src="assets/images/pages-images/theclub/achievement1.jpg" alt="Fiteness">
                 <div class="caption">
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <div class="thumbnail">
             <img src="assets/images/pages-images/theclub/achievement2.jpg" alt="Fiteness">
                 <div class="caption">
