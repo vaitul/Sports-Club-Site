@@ -114,6 +114,8 @@ else
                     buttons: {
                         Cancel: function() {
                         $( this ).dialog( "close" );
+                        if(response != "failed")
+                            window.location="../"
                         }
                     }
                 });
