@@ -1,3 +1,10 @@
+<script>
+    $(".moreTheClub").click(function(){
+        selectMenu("Facilities");
+        $(".menu-item").removeClass("menu-state-active");
+        $(".menu-item").eq(3).addClass("menu-state-active");
+    });
+</script>
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -18,15 +25,45 @@
         </div>
     </div>
 
-    
-    <br><br>
+
+    <hr>
         <center>
-            <h1 style="font-family: 'Lobster', cursive;"><b><u>The Club<u></b></h1>
+            <h1 style="font-family: 'Lobster', cursive;"><b><u>Achievements<u></b></h1>
         </center>
-    <br><br>
+    <br>
 
     <div class="row row-flex row-flex-wrap">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+            <div class="thumbnail">
+                <img src="assets/images/pages-images/theclub/achievement1.jpg" alt="Fiteness">
+                <div class="caption">
+                    <h3>Saurashtra Football tournament</h3>
+                    <p>
+                        Prestigious "Saurashtra Football tournament" Jayate Sports Club qualified by playing qualifier rounds and reached in semi-finals.                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+            <div class="thumbnail">
+            <img src="assets/images/pages-images/theclub/achievement2.jpg" alt="Fiteness">
+                <div class="caption">
+                    <h3> Open National Taekwondo Championship 2017</h3>
+                    <p>
+                        Ms Shayona Hirpara (BCA Hons Student of Saurashtra University) won Gold Medal in the National Level Competition of Second Open National Taekwondo Championship 2017
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <center>
+            <h1 style="font-family: 'Lobster', cursive;"><b><u>Facilities<u></b></h1>
+        </center>
+    <br>
+    <div class="row row-flex row-flex-wrap">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
             <div class="thumbnail">
                 <img src="assets/images/pages-images/theclub/fitness.jpg" alt="Fiteness">
                 <div class="caption">
@@ -37,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
             <div class="thumbnail">
                 <img src="assets/images/pages-images/theclub/yoga.jpeg" alt="fitness">
                 <div class="caption">
@@ -48,9 +85,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
             <div class="thumbnail">
-                <img src="assets/images/pages-images/theclub/activities.jpg" alt="fitness">
+                <img src="assets/images/pages-images/theclub/activities.jpg" width="100%" alt="fitness">
                 <div class="caption">
                     <h3>Activities</h3>
                     <p>
@@ -60,5 +97,12 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+            <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <div class="moreTheClub">More <i style="font-size:12pt;" class="fa fa-chevron-right"></i></div>
+            </div>
+    </div>
+    <hr>
 
 </div>

@@ -81,17 +81,16 @@ $(document).ready(function () {
         $(this).addClass("menu-state-active");
         selectMenu(this.innerHTML);
     });
-
 });
 
 function selectMenu(name)
 {
     var request=""
     if(name=="The Club") request="theClub";
-    if(name=="Events") request="eventsNews";
-    if(name=="Media Gallery") request="mediaGallery";
+    if(name=="Media Gallery") window.location="assets/plugins/lightGallery/demo/#lg=1&slide=0";
     if(name=="Facilities") request="facilities";
     if(name=="Contact Us") request="contactUs";
+    if(name=="About Us") request="aboutus";
 
     $("#loader").fadeIn();
     $("#content").html("");

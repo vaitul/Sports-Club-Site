@@ -27,7 +27,6 @@
                 <ul>
                 <center>
                     <li class="menu-item menu-state-active">The Club</li>
-                    <li class="menu-item">Events</li>
                     <li class="menu-item">Media Gallery</li>
                     <li class="menu-item">Facilities</li>
                     <li class="menu-item">Contact Us</li>
@@ -49,5 +48,28 @@
             <div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
         </div>
     </div>
+    <footer>
+        <center> &copy; ALL RIGHTS RESERVED BY <b>JAYATE SPORTS CLUB RAJKOT</b> - vaitulb@gmail.com</center>
+    </footer>
 </body>
 </html>
+<?php
+    if(isset($_GET['scrl']))
+    {
+        if($_GET['scrl']=='yes')
+        {
+            echo " <script>
+            if($(document).width()>767)
+            {
+                var tid = setInterval( function () {
+                    if ( document.readyState !== 'complete' ) return;
+                    clearInterval( tid );       
+                    var el = document.querySelector('html');            
+                    el.scrollTop = 261; 
+                }, 100 );
+            }
+            </script> ";
+
+        }
+    }
+?>

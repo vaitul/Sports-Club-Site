@@ -1,7 +1,7 @@
 /*********************** THE CLUB PAGE ***************************/
 blockquote{
-  border-width: 3px;
-  border-color: #ccc;
+  border-width: 7px;
+  border-color: #ddd;
 }
 
 .img-wrap{
@@ -35,6 +35,17 @@ blockquote{
     width:100%;
 }
 
+.moreTheClub{
+  text-align: center;
+  transition: 0.2s linear;
+  font-size: 15pt;
+  cursor: pointer;
+  font-weight: bold;
+}
+.moreTheClub:hover{
+  color: #77b300;
+  cursor: pointer;
+}
 
 .flex-col {
     display: flex;
@@ -43,10 +54,12 @@ blockquote{
     flex-flow: column nowrap;
 }
 
+iframe{
+  height: 100vh;
+}
 
 @media only screen and (max-width: 767px){
   .img-wrap{
-    border-radius: 5px;
     width: 100%;
     margin-bottom: 5px;
   }

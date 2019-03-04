@@ -9,9 +9,9 @@ body{
 }
 #main-page{
     background: #f9f9f9;
-    min-height: 120vh;
     margin-top:210px;
     z-index: 0;
+    min-height: 105vh;
 }
 #nav-bar{
     z-index: 9999;
