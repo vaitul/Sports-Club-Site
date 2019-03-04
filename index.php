@@ -49,7 +49,7 @@
         </div>
     </div>
     <footer>
-        <center> &copy; ALL RIGHTS RESERVED BY <b>JAYATE SPORTS CLUB RAJKOT</b> - vaitulb@gmail.com</center>
+        <center> &copy; ALL RIGHTS RESERVED BY <b>JAYATE SPORTS CLUB RAJKOT</b>; &nbsp; Developed By Vaitul :)</center>
     </footer>
 </body>
 </html>
@@ -65,7 +65,7 @@
                     if ( document.readyState !== 'complete' ) return;
                     clearInterval( tid );       
                     var el = document.querySelector('html');            
-                    el.scrollTop = 261; 
+                    el.scrollTop = 300; 
                 }, 100 );
             }
             </script> ";

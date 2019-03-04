@@ -126,14 +126,17 @@
     </head>
     <body class="home">
 
+
+
+    
         <div class="demo-gallery">
             <ul id="lightgallery" class="list-unstyled row">
                 <?php 
-                    for($i=1;$i<=100;$i++){
+                    for($i=1;$i<=22;$i++){
                 ?>
-              <li style="display:none;" class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1.jpg 375, img/1.jpg 480, img/1.jpg 800" data-src="img/1.jpg" data-sub-html="<p>&copy; ALL RIGHTS RESERVED BY <b>JAYATE SPORTS CLUB RAJKOT</b> - vaitulb@gmail.com</p>">
+              <li style="display:none;" class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/<?php echo $i; ?>.jpg 375, img/<?php echo $i; ?>.jpg 480, img/<?php echo $i; ?>.jpg 800" data-src="img/<?php echo $i; ?>.jpg" data-sub-html="<p>&copy; ALL RIGHTS RESERVED BY <b>JAYATE SPORTS CLUB RAJKOT</b> - vaitulb@gmail.com</p>">
                   <a href="">
-                      <img class="img-responsive" src="img/1.jpg">
+                      <img class="img-responsive" src="img/<?php echo $i; ?>.jpg">
                   </a>
               </li>
             <?php } ?>
@@ -147,5 +150,7 @@
         <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
         <script src="../dist/js/lightgallery-all.min.js"></script>
         <script src="../lib/jquery.mousewheel.min.js"></script>
-    </body>
+   
+   
+      </body>
 </html>

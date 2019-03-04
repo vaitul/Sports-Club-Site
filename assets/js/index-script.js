@@ -1,5 +1,5 @@
+
 $(document).ready(function () {
-    
     var scrollCount = 0, 
         latestScrollTop = 0,
         doc = document.documentElement,
@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(window).scroll(function (event) {
         if($(document).width()>767){
             var scroll = $(window).scrollTop();
-            if(scroll>242)
+            if(scroll>248)
             {
                 $("#nav-bar").css({
                     "position":"fixed",
@@ -26,7 +26,7 @@ $(document).ready(function () {
                 $("#loader").css("paddingTop","160px");
                 $(".row-flex").fadeIn(3000);
             }
-            if(scroll<242)
+            if(scroll<248)
             {
                 $("#nav-bar").css({
                     "position":"static"
@@ -87,7 +87,9 @@ function selectMenu(name)
 {
     var request=""
     if(name=="The Club") request="theClub";
-    if(name=="Media Gallery") window.location="assets/plugins/lightGallery/demo/#lg=1&slide=0";
+    if(name=="Media Gallery"){
+        window.location="assets/plugins/lightGallery/demo/#lg=1&slide=0";
+    }
     if(name=="Facilities") request="facilities";
     if(name=="Contact Us") request="contactUs";
     if(name=="About Us") request="aboutus";
