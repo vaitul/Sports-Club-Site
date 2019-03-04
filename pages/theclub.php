@@ -2,7 +2,7 @@
     $(".moreTheClub").click(function(){
         selectMenu("Facilities");
         $(".menu-item").removeClass("menu-state-active");
-        $(".menu-item").eq(3).addClass("menu-state-active");
+        $(".menu-item").eq(2).addClass("menu-state-active");
     });
 </script>
 <div class="container">
