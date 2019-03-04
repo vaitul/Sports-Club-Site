@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>jQuery lightGallery demo</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="../dist/css/lightgallery.css" rel="stylesheet">
         <style type="text/css">
             body{
